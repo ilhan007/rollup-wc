@@ -1,0 +1,22 @@
+{
+	"name": "rollup-wc",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "rollup -c",
+		"start": "npm-run-all --sequential build serve:static",
+		"serve:static": "serve"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@ui5/webcomponents": "^1.0.0-rc.2"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.3",
+		"rollup": "^1.19.4",
+		"rollup-plugin-node-resolve": "^4.0.0",
+		"serve": "^11.1.0"
+	}
+}
