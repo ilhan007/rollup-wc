@@ -27,7 +27,8 @@ Import any component available in npm via: `import "@ui5/webcomponents/dist/<com
 ```js
 import "@ui5/webcomponents/dist/Button";
 import "@ui5/webcomponents/dist/TextArea";
-import "@ui5/webcomponents/dist/DatePicker";
+import "@ui5/webcomponents/dist/Select";
+import "@ui5/webcomponents/dist/Option";
 ```
 
 ### --rollup.config.js
