@@ -13,7 +13,11 @@ Use the desired UI5 Web Components as regular HTML tags and load the application
 <body>
 	<ui5-button>Press</ui5-button>
 	<ui5-textarea show-exceeded-text></ui5-textarea>
-	<ui5-datepicker></ui5-datepicker>
+	<ui5-select style="width: 180px">
+		<ui5-option>Compact</ui5-option>
+		<ui5-option>Cozy</ui5-option>
+		<ui5-option>Condensed</ui5-option>
+	</ui5-select>
 
 	<script src="./dist/bundle.esm.js" type="module"></script>
 </body>
