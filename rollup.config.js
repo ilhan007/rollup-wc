@@ -1,4 +1,5 @@
 import resolve from "rollup-plugin-node-resolve";
+import url from "rollup-plugin-url";
 
 export default {
 	input: "src/main.esm.js",
@@ -7,6 +8,15 @@ export default {
 		format: "esm"
 	},
 	plugins: [
-		resolve()
+		resolve(),
+		url({
+			limit: 0,
+			include: [
+				/.*i18n\/.*\.json/,
+			],
+			emitFiles: true,
+			fileName: "[name].[hash][extname]",
+			publicPath: "/dist/",
+		})
 	]
 };
