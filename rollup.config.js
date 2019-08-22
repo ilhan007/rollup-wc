@@ -2,9 +2,9 @@ import resolve from "rollup-plugin-node-resolve";
 import url from "rollup-plugin-url";
 
 export default {
-	input: "src/main.esm.js",
+	input: "src/bundle.esm.js",
 	output: {
-		file: "./dist/bundle.esm.js",
+		dir: "dist/",
 		format: "esm"
 	},
 	plugins: [
@@ -12,11 +12,11 @@ export default {
 		url({
 			limit: 0,
 			include: [
-				/.*i18n\/.*\.json/,
+				/.*\.json/,
 			],
 			emitFiles: true,
 			fileName: "[name].[hash][extname]",
-			publicPath: "/dist/",
+			publicPath: "dist/",
 		})
 	]
 };
