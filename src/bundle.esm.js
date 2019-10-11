@@ -697,18 +697,3 @@ import "@ui5/webcomponents/dist/icons/write-new.js";
 import "@ui5/webcomponents/dist/icons/x-ray.js";
 import "@ui5/webcomponents/dist/icons/zoom-in.js";
 import "@ui5/webcomponents/dist/icons/zoom-out.js";
-
-// Theme switch
-
-Array.from(document.querySelectorAll('ui5-radiobutton[name="theme"]')).forEach(function(radio){
-	radio.addEventListener("select", function (event) {
-		if (event.target.selected) {
-			var theme = event.target.id;
-			if (theme === "sap_belize_hcb") {
-				document.body.style.backgroundColor = "black";
-			} else {
-				document.body.style.backgroundColor = "white";
-			}
-			setTheme(theme);
-		}
-})});
