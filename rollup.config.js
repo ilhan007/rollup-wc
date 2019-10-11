@@ -1,4 +1,5 @@
 import resolve from "rollup-plugin-node-resolve";
+import { terser } from "rollup-plugin-terser";
 import url from "rollup-plugin-url";
 
 export default {
@@ -12,11 +13,12 @@ export default {
 		url({
 			limit: 0,
 			include: [
-				/.*\.json/,
+				/assets\/.*\.json/,
 			],
 			emitFiles: true,
 			fileName: "[name].[hash][extname]",
 			publicPath: "dist/",
-		})
+		}),
+		terser(),
 	]
 };
