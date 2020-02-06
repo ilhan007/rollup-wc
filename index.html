@@ -6,34 +6,36 @@
 </head>
 
 <body>
-	<ui5-shellbar
-		primary-title="UI5 Web Components"
-		secondary-title="secondary title"
-		notification-count="99+"
-		show-notifications
-		show-product-switch
-		show-co-pilot></ui5-shellbar>
 
-	<ui5-title>Hello	</ui5-title>
+	<ui5-title>Hello</ui5-title>
 
 	<ui5-messagestrip type="Warning">This is a small playground</ui5-messagestrip><br><br>
 
+	<br />
+	<ui5-icon name="home"></ui5-icon>
+	<ui5-icon name="employee"></ui5-icon>
+	<ui5-icon name="accept"></ui5-icon>
+	<ui5-icon name="decline"></ui5-icon>
+	<ui5-icon name="letter"></ui5-icon>
+	<ui5-icon name="meal"></ui5-icon>
+	<br />
+
 	<ui5-input show-suggestions value-state="Error">
-		<ui5-li>Australia</ui5-li>
-		<ui5-li>Austria</ui5-li>
-		<ui5-li>Andorra</ui5-li>
-		<ui5-li>Brazil</ui5-li>
-		<ui5-li>Bulgaria</ui5-li>
-		<ui5-li>China</ui5-li>
-		<ui5-li>Denmkar</ui5-li>
-		<ui5-li>England</ui5-li>
-		<ui5-li>Spain</ui5-li>
+		<ui5-li icon="map">Australia</ui5-li>
+			<ui5-li icon="map">Austria</ui5-li>
+			<ui5-li icon="map">Andorra</ui5-li>
+			<ui5-li icon="map">Brazil</ui5-li>
+			<ui5-li icon="map">Bulgaria</ui5-li>
+			<ui5-li icon="map">China</ui5-li>
+			<ui5-li icon="map">Denmkar</ui5-li>
+			<ui5-li icon="map">England</ui5-li>
+			<ui5-li icon="map">Spain</ui5-li>
 	</ui5-input><br><br>
 
 	<ui5-select>
-		<ui5-option>Fiori3</ui5-option>
-		<ui5-option>Belize</ui5-option>
-		<ui5-option>HCB</ui5-option>
+		<ui5-option icon="settings">Fiori3</ui5-option>
+		<ui5-option icon="settings"></ui5-option icon>Belize</ui5-option>
+		<ui5-option icon="settings"></ui5-option icon>HCB</ui5-option>
 	</ui5-select><br><br>
 
 	<ui5-datepicker></ui5-datepicker><br><br>
